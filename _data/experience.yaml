@@ -1,0 +1,35 @@
+- position: Senior Software Engineer, Technical Lead
+  from: 2018-02-01
+  to: present
+  company: Capital One
+  location: Richmond, Virginia
+  description: >-
+    Technical lead of engineering team responsible for end-to-end feature development in new case management system for
+    credit cards.
+
+- position: Software Engineer
+  from: 2018-07-01
+  to: 2020-02-01
+  company: Capital One
+  location: Richmond, Virginia
+  description: >-
+    Developer and support of credit card applications.
+
+- position: Senior Software Engineer
+  from: 2016-06-01
+  to: 2018-05-01
+  company: Capital One
+  location: Richmond, Virginia
+  description: |
+    Consultant like position in the TOC, bridging between engineering and production support.
+
+    * modernization of alerting and rallying strategy
+    * **monitoring transformation** from HP suite
+
+- position: Shared Applications Developer
+  from: 2015-09-01
+  to: 2016-05-01
+  company: Genworth Financial
+  location: Lynchburg, Virginia
+  description: >-
+    Developer position building and supported the CRM software.

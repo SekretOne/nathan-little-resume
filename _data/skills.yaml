@@ -1,0 +1,83 @@
+code-languages:
+  - java
+  - javascript
+  - OPA
+  - python
+  - ruby
+  - bash
+  - groovy
+  - SQL
+  - Apache Avro
+  - PowerShell
+  - Gherkin
+
+frameworks:
+  - name: Node.js
+    for: javascript
+  - name: Vue.js
+    for: javascript
+  - name: Spring
+    for: java
+  - name: Spring-Boot
+    for: java
+  - name: hibernate
+    for: java
+  - name: Feign
+    for: java
+  - name: xState
+    for: javascript
+  - name: Jest
+    for: javascript
+  - name: AssertJ
+    for: javascript
+  - name: cucumber
+    for: java
+  - name: cucumber.js
+    for: javascript
+
+software:
+  - name: Google Suite
+    for: productivity
+  - name: Jira
+    for: productivity
+  - name: git
+    for: version control
+  - name: GitHub
+    for: productivity
+  - name: Microsoft Office
+    for: productivity
+  - name: Jenkins
+    for: pipeline
+  - name: Amazon Web Services
+    for: cloud
+  - name: Corel Suite
+    for: design
+  - name: postGreSQL
+    for: database
+  - name: Mongo
+    for: database
+  - name: Dynamo
+    for: database
+  - name: docker
+    for: container
+  - name: kubernetes
+    for: container
+  - name: Kafka
+    for: messages
+  - name: Slack
+    for: productivity
+  - name: Grafana
+    for: monitoring
+  - name: PagerDuty
+    for: monitoring
+  - name: Zabbix
+    for: monitoring
+  - name: ELK
+    for: monitoring
+
+supplemental:
+  - Open Source Software Licenses
+  - Change Control
+  - Configuration Management
+  - Automated Testing
+  - RESTful Web Services

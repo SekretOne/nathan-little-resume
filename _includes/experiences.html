@@ -1,0 +1,8 @@
+{%- for exp in site.data.experience -%}
+<div class='lil-experience'>
+    <h2>{{ exp.position }}</h2>
+    <p>
+        {{ exp.description | markdownify }}
+    </p>
+</div>
+{%- endfor -%}
