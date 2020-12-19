@@ -9,7 +9,16 @@ layout: default
 
   {{ content }}
 
-  {%- include education.html -%}
+  <div class="lil-banner">
+    <img class="lil-token" src="assets/avatar.png" alt="avatar">
+    {%- unless site.author -%}
+       <span>Missing author information! Set it in the _config.yml</span>
+    {%- endunless -%}
+    <h1>{{ site.author }}</h1>
+  </div>
+  <hr/>
+
+  {%- include experiences.html -%}
 
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
