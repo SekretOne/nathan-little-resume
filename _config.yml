@@ -23,7 +23,7 @@ author: Nathan Little
 email: sekretone@gmail.com
 description: >-
   Nathan Little's work experience and skill sets.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/nathan-little-resume" # the subpath of your site, e.g. /blog
 url: "https://sekretone.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  Sekretone
 
