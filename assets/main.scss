@@ -15,8 +15,8 @@ img.lil-token {
   height: 128px;
   width: 128px;
   border-radius: 50%;
-  border: medium solid $grey-color-light;
-  background: #eeeeff;
+  // border: medium solid $grey-color-dark;
+  background: #98418b;
 }
 
 .lil-banner {
@@ -28,4 +28,11 @@ img.lil-token {
     margin: auto;
     text-align: center;
   }
+}
+
+.experience-detail-container{
+  font-size: $base-font-size * 1.20;
+  color: $grey-color;
+  display: flex;
+  justify-content: space-between;
 }

@@ -7,8 +7,6 @@ layout: default
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
-  {{ content }}
-
   <div class="lil-banner">
     <img class="lil-token" src="assets/avatar.png" alt="avatar">
     {%- unless site.author -%}
@@ -16,9 +14,19 @@ layout: default
     {%- endunless -%}
     <h1>{{ site.author }}</h1>
   </div>
-  <hr/>
 
-  {%- include experiences.html -%}
+  {{ content }}
+
+  {%- if site.data.experience.size > 0 -%}
+  <section>
+    <hr/>
+    <h2>Experience</h2>
+    <hr/>
+    {%- for exp in site.data.experience -%}
+      {%- include experience.html -%}
+    {%- endfor -%}
+  </section>
+  {%- endif -%}
 
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
