@@ -7,39 +7,73 @@ layout: default
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
-  {{ content }}
-
-  <div class="lil-banner">
+  <section class="lil-banner">
     <img class="lil-token" src="assets/avatar.png" alt="avatar">
     {%- unless site.author -%}
-       <span>Missing author information! Set it in the _config.yml</span>
+       <span>Missing author information! Whose resume is this anyway? Set it in the _config.yml</span>
     {%- endunless -%}
     <h1>{{ site.author }}</h1>
-  </div>
-  <hr/>
+  </section>
 
-  {%- include experiences.html -%}
+  {{ content }}
 
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
+  {%- if site.data.experience.size > 0 -%}
+  <section class="resume-section">
+    <header class="resume-header">
+      <h2>Experience</h2>
+    </header>
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    {%- for exp in site.data.experience -%}
+      {%- include experience.html -%}
+    {%- endfor -%}
+  </section>
   {%- endif -%}
 
+  {%- if site.data.skills.size > 0 -%}
+  <section class="resume-section">
+    <header class="resume-header">
+      <h2>Skills</h2>
+    </header>
+
+    {%- if site.data.skills.code_languages.size > 0 -%}
+      {%- include list.html title="Code Languages" items=site.data.skills.code_languages -%}
+    {%- endif -%}
+
+    {%- if site.data.skills.frameworks.size > 0 -%}
+      {%- include list.html title="Frameworks" items=site.data.skills.frameworks -%}
+    {%- endif -%}
+
+    {%- if site.data.skills.software.size > 0 -%}
+      {%- include list.html title="Software" items=site.data.skills.software -%}
+    {%- endif -%}
+
+    {%- if site.data.skills.supplemental.size > 0 -%}
+      {%- include list.html title="Supplemental" items=site.data.skills.supplemental -%}
+    {%- endif -%}
+
+  </section>
+  {%- endif -%}
+
+
+  {%- if site.data.education.size > 0 -%}
+  <section class="resume-section">
+    <header class="resume-header">
+      <h2>Education</h2>
+    </header>
+
+    {%- for degree in site.data.education -%}
+    <div>
+      <h2>{{ degree.name }}</h2>
+      <div class="experience-detail-container">
+        <div class="experience-detail-space">
+          <div>{{degree.location}}</div>
+        </div>
+        <span class="experience-detail-time">{{degree.from}} - {{degree.to}}</span>
+      </div>
+    </div>
+    {%- endfor -%}
+  </section>
+  {%- endif -%}
+
+  <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>-->
 </div>

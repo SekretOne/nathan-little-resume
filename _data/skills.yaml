@@ -1,15 +1,15 @@
-code-languages:
-  - java
-  - javascript
-  - OPA
-  - python
-  - ruby
-  - bash
-  - groovy
-  - SQL
-  - Apache Avro
-  - PowerShell
-  - Gherkin
+code_languages:
+  - name: java
+  - name: javascript
+  - name: OPA
+  - name: python
+  - name: ruby
+  - name: bash / shell
+  - name: groovy
+  - name: SQL
+  - name: Apache Avro
+  - name: PowerShell
+  - name: Gherkin
 
 frameworks:
   - name: Node.js
@@ -33,6 +33,8 @@ frameworks:
   - name: cucumber
     for: java
   - name: cucumber.js
+    for: javascript
+  - name: jekyll
     for: javascript
 
 software:
@@ -76,8 +78,8 @@ software:
     for: monitoring
 
 supplemental:
-  - Open Source Software Licenses
-  - Change Control
-  - Configuration Management
-  - Automated Testing
-  - RESTful Web Services
+  - name: Open Source Software Licenses
+  - name: Change Control
+  - name: Configuration Management
+  - name: Automated Testing
+  - name: RESTful Web Services

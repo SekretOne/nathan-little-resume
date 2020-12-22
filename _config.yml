@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Senior Software Engineer, Technical Lead
+title: Nathan Little's Resume
 author: Nathan Little
 email: sekretone@gmail.com
 description: >-
@@ -26,6 +26,7 @@ description: >-
 baseurl: "/nathan-little-resume" # the subpath of your site, e.g. /blog
 url: "https://sekretone.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  Sekretone
+linkedin_username: nathan-the-little
 
 # Build settings
 theme: minima

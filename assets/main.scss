@@ -15,17 +15,64 @@ img.lil-token {
   height: 128px;
   width: 128px;
   border-radius: 50%;
-  border: medium solid $grey-color-light;
-  background: #eeeeff;
+  // border: medium solid $grey-color-dark;
+  background: #98418b;
 }
 
 .lil-banner {
   padding-top:10px;
   padding-bottom: 30px;
 
+  h1 {
+    @include relative-font-size(2);
+  }
+
   * {
     display: block;
     margin: auto;
     text-align: center;
+  }
+}
+
+.experience-detail-container{
+  font-size: $base-font-size * 1.20;
+  color: $grey-color;
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume-section{
+  margin-bottom: $spacing-unit * 2.5;
+
+  .resume-header{
+    //border-top: 3px solid;
+    //border-bottom: 2px solid;
+    text-align: center;
+    background-color: $grey-color-light;
+    font-weight: bold;
+    padding: 0;
+
+    * {
+      padding: 5px;
+    }
+  }
+}
+
+.resume-collection-group{
+  margin-bottom: $spacing-unit;
+
+  .resume-collection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+    margin-left: 0;
+
+    .resume-collection-item{
+      padding: 6px 12px 6px 12px;
+      margin: 4px 10px 4px 10px;
+      border-radius: 15px;
+      background-color: $grey-color-light;
+    }
   }
 }

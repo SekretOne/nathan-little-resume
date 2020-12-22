@@ -1,0 +1,8 @@
+<div class="resume-collection-group">
+    <h3>{{include.title}}</h3>
+    <div class="resume-collection">
+        {%- for item in include.items -%}
+        <span class="resume-collection-item">{{item.name}}</span>
+        {%- endfor -%}
+    </div>
+</div>
