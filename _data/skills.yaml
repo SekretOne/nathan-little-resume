@@ -1,15 +1,15 @@
 code_languages:
-  - java
-  - javascript
-  - OPA
-  - python
-  - ruby
-  - bash / shell
-  - groovy
-  - SQL
-  - Apache Avro
-  - PowerShell
-  - Gherkin
+  - name: java
+  - name: javascript
+  - name: OPA
+  - name: python
+  - name: ruby
+  - name: bash / shell
+  - name: groovy
+  - name: SQL
+  - name: Apache Avro
+  - name: PowerShell
+  - name: Gherkin
 
 frameworks:
   - name: Node.js

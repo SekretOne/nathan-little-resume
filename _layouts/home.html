@@ -35,60 +35,45 @@ layout: default
       <h2>Skills</h2>
     </header>
 
-
     {%- if site.data.skills.code_languages.size > 0 -%}
-    <div class="resume-collection-group">
-      <h3>Code Languages</h3>
-      <div class="resume-collection">
-        {%- for language in site.data.skills.code_languages -%}
-        <span class="resume-collection-item">{{language}}</span>
-        {%- endfor -%}
-      </div>
-    </div>
+      {%- include list.html title="Code Languages" items=site.data.skills.code_languages -%}
     {%- endif -%}
 
     {%- if site.data.skills.frameworks.size > 0 -%}
-    <div class="resume-collection-group">
-      <h3>Frameworks</h3>
-      <div class="resume-collection">
-        {%- for item in site.data.skills.frameworks -%}
-        <span class="resume-collection-item">{{item.name}}</span>
-        {%- endfor -%}
-      </div>
-    </div>
+      {%- include list.html title="Frameworks" items=site.data.skills.frameworks -%}
     {%- endif -%}
 
     {%- if site.data.skills.software.size > 0 -%}
-    <div class="resume-collection-group">
-      <h3>Software</h3>
-      <div class="resume-collection">
-        {%- for item in site.data.skills.software -%}
-        <div class="resume-collection-item">
-          <span>{{item.name}}</span>
-        </div>
-        {%- endfor -%}
-      </div>
-    </div>
+      {%- include list.html title="Software" items=site.data.skills.software -%}
     {%- endif -%}
 
     {%- if site.data.skills.supplemental.size > 0 -%}
-    <div class="resume-collection-group">
-      <h3>Supplemental</h3>
-      <div class="resume-collection">
-        {%- for item in site.data.skills.supplemental -%}
-        <div class="resume-collection-item">
-          <span>{{item.name}}</span>
-        </div>
-        {%- endfor -%}
-      </div>
-    </div>
+      {%- include list.html title="Supplemental" items=site.data.skills.supplemental -%}
     {%- endif -%}
-
 
   </section>
   {%- endif -%}
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 
+  {%- if site.data.education.size > 0 -%}
+  <section class="resume-section">
+    <header class="resume-header">
+      <h2>Education</h2>
+    </header>
 
+    {%- for degree in site.data.education -%}
+    <div>
+      <h2>{{ degree.name }}</h2>
+      <div class="experience-detail-container">
+        <div class="experience-detail-space">
+          <div>{{degree.location}}</div>
+        </div>
+        <span class="experience-detail-time">{{degree.from}} - {{degree.to}}</span>
+      </div>
+    </div>
+    {%- endfor -%}
+  </section>
+  {%- endif -%}
+
+  <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>-->
 </div>

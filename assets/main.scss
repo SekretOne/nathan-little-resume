@@ -42,6 +42,8 @@ img.lil-token {
 }
 
 .resume-section{
+  margin-bottom: $spacing-unit * 2.5;
+
   .resume-header{
     //border-top: 3px solid;
     //border-bottom: 2px solid;
@@ -63,6 +65,8 @@ img.lil-token {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    list-style: none;
+    margin-left: 0;
 
     .resume-collection-item{
       padding: 6px 12px 6px 12px;
