@@ -7,47 +7,88 @@ layout: default
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
-  <div class="lil-banner">
+  <section class="lil-banner">
     <img class="lil-token" src="assets/avatar.png" alt="avatar">
     {%- unless site.author -%}
-       <span>Missing author information! Set it in the _config.yml</span>
+       <span>Missing author information! Whose resume is this anyway? Set it in the _config.yml</span>
     {%- endunless -%}
     <h1>{{ site.author }}</h1>
-  </div>
+  </section>
 
   {{ content }}
 
   {%- if site.data.experience.size > 0 -%}
-  <section>
-    <hr/>
-    <h2>Experience</h2>
-    <hr/>
+  <section class="resume-section">
+    <header class="resume-header">
+      <h2>Experience</h2>
+    </header>
+
     {%- for exp in site.data.experience -%}
       {%- include experience.html -%}
     {%- endfor -%}
   </section>
   {%- endif -%}
 
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
+  {%- if site.data.skills.size > 0 -%}
+  <section class="resume-section">
+    <header class="resume-header">
+      <h2>Skills</h2>
+    </header>
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+
+    {%- if site.data.skills.code_languages.size > 0 -%}
+    <div class="resume-collection-group">
+      <h3>Code Languages</h3>
+      <div class="resume-collection">
+        {%- for language in site.data.skills.code_languages -%}
+        <span class="resume-collection-item">{{language}}</span>
+        {%- endfor -%}
+      </div>
+    </div>
+    {%- endif -%}
+
+    {%- if site.data.skills.frameworks.size > 0 -%}
+    <div class="resume-collection-group">
+      <h3>Frameworks</h3>
+      <div class="resume-collection">
+        {%- for item in site.data.skills.frameworks -%}
+        <span class="resume-collection-item">{{item.name}}</span>
+        {%- endfor -%}
+      </div>
+    </div>
+    {%- endif -%}
+
+    {%- if site.data.skills.software.size > 0 -%}
+    <div class="resume-collection-group">
+      <h3>Software</h3>
+      <div class="resume-collection">
+        {%- for item in site.data.skills.software -%}
+        <div class="resume-collection-item">
+          <span>{{item.name}}</span>
+        </div>
+        {%- endfor -%}
+      </div>
+    </div>
+    {%- endif -%}
+
+    {%- if site.data.skills.supplemental.size > 0 -%}
+    <div class="resume-collection-group">
+      <h3>Supplemental</h3>
+      <div class="resume-collection">
+        {%- for item in site.data.skills.supplemental -%}
+        <div class="resume-collection-item">
+          <span>{{item.name}}</span>
+        </div>
+        {%- endfor -%}
+      </div>
+    </div>
+    {%- endif -%}
+
+
+  </section>
   {%- endif -%}
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+
 
 </div>

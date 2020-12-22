@@ -1,10 +1,10 @@
-code-languages:
+code_languages:
   - java
   - javascript
   - OPA
   - python
   - ruby
-  - bash
+  - bash / shell
   - groovy
   - SQL
   - Apache Avro
@@ -33,6 +33,8 @@ frameworks:
   - name: cucumber
     for: java
   - name: cucumber.js
+    for: javascript
+  - name: jekyll
     for: javascript
 
 software:
@@ -76,8 +78,8 @@ software:
     for: monitoring
 
 supplemental:
-  - Open Source Software Licenses
-  - Change Control
-  - Configuration Management
-  - Automated Testing
-  - RESTful Web Services
+  - name: Open Source Software Licenses
+  - name: Change Control
+  - name: Configuration Management
+  - name: Automated Testing
+  - name: RESTful Web Services

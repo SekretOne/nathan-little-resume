@@ -23,6 +23,10 @@ img.lil-token {
   padding-top:10px;
   padding-bottom: 30px;
 
+  h1 {
+    @include relative-font-size(2);
+  }
+
   * {
     display: block;
     margin: auto;
@@ -35,4 +39,36 @@ img.lil-token {
   color: $grey-color;
   display: flex;
   justify-content: space-between;
+}
+
+.resume-section{
+  .resume-header{
+    //border-top: 3px solid;
+    //border-bottom: 2px solid;
+    text-align: center;
+    background-color: $grey-color-light;
+    font-weight: bold;
+    padding: 0;
+
+    * {
+      padding: 5px;
+    }
+  }
+}
+
+.resume-collection-group{
+  margin-bottom: $spacing-unit;
+
+  .resume-collection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    .resume-collection-item{
+      padding: 6px 12px 6px 12px;
+      margin: 4px 10px 4px 10px;
+      border-radius: 15px;
+      background-color: $grey-color-light;
+    }
+  }
 }
