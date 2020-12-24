@@ -58,21 +58,28 @@ img.lil-token {
   }
 }
 
-.resume-collection-group{
+.resume-list-container{
   margin-bottom: $spacing-unit;
 
-  .resume-collection{
+  .resume-list{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     list-style: none;
     margin-left: 0;
 
-    .resume-collection-item{
+    .resume-list-item{
       padding: 6px 12px 6px 12px;
       margin: 4px 10px 4px 10px;
       border-radius: 15px;
       background-color: $grey-color-light;
+    }
+
+    .resume-list-item-icon{
+      height: $base-font-size;
+      width: auto;
+      margin-right: 4px;
+      margin-bottom: 4px;
     }
   }
 }

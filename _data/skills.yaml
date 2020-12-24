@@ -1,81 +1,115 @@
 code_languages:
   - name: java
+    icon: assets/icons/java-14.svg
   - name: javascript
+    icon: assets/icons/javascript-1.svg
   - name: OPA
+    icon: assets/icons/openpolicyagent_icon_132125.svg
   - name: python
+    icon: assets/icons/python-5.svg
   - name: ruby
+    icon: assets/icons/ruby.svg
   - name: bash / shell
+    icon: assets/icons/bash-shell-icon.svg
   - name: groovy
   - name: SQL
+    icon: assets/icons/sql.svg
   - name: Apache Avro
+    icon: assets/icons/avro.svg
   - name: PowerShell
   - name: Gherkin
 
 frameworks:
   - name: Node.js
     for: javascript
+    icon: assets/icons/nodejs-icon.svg
   - name: Vue.js
     for: javascript
+    icon: assets/icons/vue-js.svg
   - name: Spring
     for: java
+    icon: assets/icons/spring-3.svg
   - name: Spring-Boot
     for: java
+    icon: assets/icons/spring-3.svg
   - name: hibernate
     for: java
+    icon: assets/icons/hibernate.svg
   - name: Feign
     for: java
   - name: xState
     for: javascript
   - name: Jest
     for: javascript
+    icon: assets/icons/jest-0.svg
   - name: AssertJ
     for: javascript
   - name: cucumber
     for: java
+    icon: assets/icons/cucumber.svg
   - name: cucumber.js
     for: javascript
+    icon: assets/icons/cucumber.svg
   - name: jekyll
     for: javascript
+    icon: assets/icons/jekyll.svg
 
 software:
   - name: Google Suite
     for: productivity
+    icon: assets/icons/google-icon.svg
   - name: Jira
     for: productivity
+    icon: assets/icons/jira-1.svg
   - name: git
     for: version control
+    icon: assets/icons/git-icon.svg
   - name: GitHub
     for: productivity
-  - name: Microsoft Office
-    for: productivity
+    icon: assets/icons/github-icon-1.svg
   - name: Jenkins
     for: pipeline
+    icon: assets/icons/jenkins-1.svg
   - name: Amazon Web Services
     for: cloud
+    icon: assets/icons/aws-2.svg
   - name: Corel Suite
     for: design
+    icon: assets/icons/corel-painter_icon.ico
   - name: postGreSQL
     for: database
+    icon: assets/icons/postgresql.svg
   - name: Mongo
     for: database
-  - name: Dynamo
+    icon: assets/icons/mongodb-icon-1.svg
+  - name: DynamoDB
     for: database
+    icon: assets/icons/aws-dynamodb.svg
   - name: docker
     for: container
+    icon: assets/icons/docker.svg
   - name: kubernetes
     for: container
+    icon: assets/icons/kubernetes.svg
   - name: Kafka
     for: messages
+    icon: assets/icons/kafka.svg
   - name: Slack
     for: productivity
+    icon: assets/icons/slack-1.svg
   - name: Grafana
     for: monitoring
+    icon: assets/icons/grafana.svg
   - name: PagerDuty
     for: monitoring
+    icon: assets/icons/pagerduty_logo_icon.svg
   - name: Zabbix
     for: monitoring
+    icon: assets/icons/zabbix-icon.svg
   - name: ELK
     for: monitoring
+  - name: Microsoft Office
+    for: productivity
 
 supplemental:
   - name: Open Source Software Licenses
