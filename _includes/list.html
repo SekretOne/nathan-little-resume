@@ -3,7 +3,9 @@
     <div class="resume-list">
         {%- for item in include.items -%}
         <div class="resume-list-item">
-            {%- if item.icon -%}<img src="{{item.icon}}" class="resume-list-item-icon"/> {%- endif -%}
+            <div class="resume-list-item-icon"/>
+            {%- if item.icon -%}<img src="{{item.icon}}"/> {%- endif -%}
+            </div>
             <span src="resume-list-item-text">{{item.name}}</span>
         </div>
 
