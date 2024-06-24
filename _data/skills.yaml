@@ -1,3 +1,5 @@
+
+
 code_languages:
   - name: java
     icon: assets/icons/java-14.svg
@@ -12,12 +14,11 @@ code_languages:
   - name: bash / shell
     icon: assets/icons/bash-shell-icon.svg
   - name: groovy
+    icon: assets/icons/groovy.png
   - name: SQL
     icon: assets/icons/sql.svg
-  - name: Apache Avro
-    icon: assets/icons/avro.svg
   - name: PowerShell
-  - name: Gherkin
+    icon: assets/icons/powershell.svg
 
 frameworks:
   - name: Node.js
@@ -26,29 +27,22 @@ frameworks:
   - name: Vue.js
     for: javascript
     icon: assets/icons/vue-js.svg
-  - name: Spring
-    for: java
-    icon: assets/icons/spring-3.svg
   - name: Spring-Boot
     for: java
     icon: assets/icons/spring-3.svg
   - name: hibernate
     for: java
     icon: assets/icons/hibernate.svg
-  - name: Feign
-    for: java
   - name: xState
+    icon: assets/icons/xstate.svg
     for: javascript
   - name: Jest
     for: javascript
     icon: assets/icons/jest-0.svg
-  - name: AssertJ
-    for: javascript
   - name: cucumber
-    for: java
-    icon: assets/icons/cucumber.svg
-  - name: cucumber.js
-    for: javascript
+    for:
+      - java
+      - javascript
     icon: assets/icons/cucumber.svg
   - name: jekyll
     for: javascript
@@ -108,8 +102,12 @@ software:
     icon: assets/icons/zabbix-icon.svg
   - name: ELK
     for: monitoring
+    icon: assets/icons/elastic-stack.svg
   - name: Microsoft Office
     for: productivity
+    icon: assets/icons/office-1.svg
+  - name: Apache Avro
+    icon: assets/icons/avro.svg
 
 supplemental:
   - name: Open Source Software Licenses
