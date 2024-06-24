@@ -1,8 +1,14 @@
-<div class="resume-collection-group">
+<div class="resume-list-container">
     <h3>{{include.title}}</h3>
-    <div class="resume-collection">
+    <div class="resume-list">
         {%- for item in include.items -%}
-        <span class="resume-collection-item">{{item.name}}</span>
+        <div class="resume-list-item">
+            <div class="resume-list-item-icon"/>
+            {%- if item.icon -%}<img src="{{item.icon}}"/> {%- endif -%}
+            </div>
+            <span src="resume-list-item-text">{{item.name}}</span>
+        </div>
+
         {%- endfor -%}
     </div>
 </div>

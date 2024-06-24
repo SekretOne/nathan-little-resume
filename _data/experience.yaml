@@ -1,35 +1,86 @@
-- position: Senior Software Engineer, Technical Lead
-  from: 2018-02-01
+- position: Lead Software Engineer, SRE
+  from: 2022-05-01
   to: present
   company: Capital One
   location: Richmond, Virginia
-  description: >-
-    Technical lead of engineering team responsible for end-to-end feature development in new case management system for
-    credit cards.
+  description: |-
+    Acting as a master of many of engineering needs, to setting up build pipelines, testing, feature refinement and of 
+    course the literal code development and delivery. Acting as a "lead from the front" 
+
+    ### Responsibilities
+
+    * reverse engineering of aged system running on Kubernetes
+    * architecting new serverless system and data strategy using AWS lambda, event bus, dynamoDB
+    * educating team both leaders and engineers on risks, cost benefit.
+    * transforming high incident, costly deployment strategy to a stable, automated, tested ecosystem that deploys multiple times a day.
+    * cyber-security and open source licensing
+
+
+- position: Senior Software Engineer, Technical Lead
+  from: 2018-02-01
+  to: 2022-05-01
+  company: Capital One
+  location: Richmond, Virginia
+  description: |-
+    Technical lead of software engineering team responsible for end-to-end feature development in new case management
+    system for credit cards.
+
+    ### Responsibilities
+
+    * active role with stakeholders and leadership to identify intent
+    * managing priority and technical design to balance need, cost, and risk
+    * contributing to the code bases belonging to over a dozen teams, in varying technologies
+    * mentoring and technical teaching
+    * 'lead from the front' for discovering problems and implementing solutions, from high level architectural to low level issues
 
 - position: Software Engineer
   from: 2018-07-01
   to: 2020-02-01
   company: Capital One
   location: Richmond, Virginia
-  description: >-
+  description: |-
     Developer and support of credit card applications.
+
+    ### Major Projects
+
+    * Cloud Migration of Visa Chargeback applications, java microservices with PostGres and Mongo databases
+    * `JIT Chargeback Core`, *Spring Boot* cloud native chargeback orchestrator for in-house case management system
 
 - position: Senior Software Engineer
   from: 2016-06-01
   to: 2018-05-01
   company: Capital One
   location: Richmond, Virginia
-  description: |
-    Consultant like position in the TOC, bridging between engineering and production support.
+  description: |-
+    Consultant like position in the TOC, bridging between engineering and production support, under the very broad
+    purview of automate, eliminate, and optimize.
 
-    * modernization of alerting and rallying strategy
-    * **monitoring transformation** from HP suite
+    ### Responsibilities
+
+    * transforming monitoring tooling from HP suite to new technologies
+    * educating production support staff on scripting
+    * directly supporting high impact production issues with data analyis and mitigation plans
+
+    ### Major Projects
+
+    * evaluation and replacement of company 'on call' machanism from Mir3 to PagerDuty
+    * `Bridget`, Slack bot for incidment management in python
 
 - position: Shared Applications Developer
   from: 2015-09-01
   to: 2016-05-01
   company: Genworth Financial
   location: Lynchburg, Virginia
-  description: >-
+  description: |-
     Developer position building and supported the CRM software.
+
+    ### Responsibilities
+
+    * Managing code repository and SOD policies for team
+    * production support
+    * Support of IVR
+
+    ### Major Projects
+
+    * support and enhancement of `Fenrir`, a webservice supplement to INFOR using Java and Thymeleaf
+    * `Customer Service Gateway 3`, java and angular 1.X based customer lookup tool

@@ -5,8 +5,8 @@
 @import "minima";
 
 
-.lil-experience{
-  h2{
+.lil-experience {
+  h2 {
     @include relative-font-size(2);
   }
 }
@@ -20,7 +20,7 @@ img.lil-token {
 }
 
 .lil-banner {
-  padding-top:10px;
+  padding-top: 10px;
   padding-bottom: 30px;
 
   h1 {
@@ -34,17 +34,17 @@ img.lil-token {
   }
 }
 
-.experience-detail-container{
+.experience-detail-container {
   font-size: $base-font-size * 1.20;
   color: $grey-color;
   display: flex;
   justify-content: space-between;
 }
 
-.resume-section{
+.resume-section {
   margin-bottom: $spacing-unit * 2.5;
 
-  .resume-header{
+  .resume-header {
     //border-top: 3px solid;
     //border-bottom: 2px solid;
     text-align: center;
@@ -58,21 +58,55 @@ img.lil-token {
   }
 }
 
-.resume-collection-group{
+$resume-list-cols: 6;
+
+.resume-list-container {
   margin-bottom: $spacing-unit;
 
-  .resume-collection{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    list-style: none;
-    margin-left: 0;
+  .resume-list {
+    display: grid;
+    grid-template-columns: repeat($resume-list-cols, 1fr);
 
-    .resume-collection-item{
-      padding: 6px 12px 6px 12px;
-      margin: 4px 10px 4px 10px;
-      border-radius: 15px;
-      background-color: $grey-color-light;
+    .resume-list-item {
+      border: $grey-color-light thin solid;
+      border-radius: 5px;
+      text-align: center;
+
+      margin: 3%;
+
+      transition-duration: .075s;
+      transition-timing-function: linear;
+
+      .resume-list-item-icon {
+        border-bottom: $grey-color-light thin solid;
+
+        width: auto;
+        height: 32px;
+
+        padding-top: 6px;
+        padding-bottom: 6px;
+
+        transition-duration: .15s;
+      }
+
+      .resume-list-item-icon > img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .resume-list-item:nth-child(#{$resume-list-cols}n-#{$resume-list-cols - 1}){
+      margin-left: 0;
+    }
+
+    .resume-list-item:nth-child(#{$resume-list-cols}n){
+      margin-right: 0;
+    }
+
+    .resume-list-item:hover {
+      transform: scale(1.08, 1.08);
+      transition-delay: .1s;
     }
   }
 }
