@@ -19,6 +19,8 @@ code_languages:
     icon: assets/icons/sql.svg
   - name: PowerShell
     icon: assets/icons/powershell.svg
+  - name: GoLang
+    icon: assets/icons/golang.svg
 
 frameworks:
   - name: Node.js
