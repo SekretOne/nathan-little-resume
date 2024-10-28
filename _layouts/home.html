@@ -34,22 +34,11 @@ layout: default
     <header class="resume-header">
       <h2>Skills</h2>
     </header>
-
-    {%- if site.data.skills.code_languages.size > 0 -%}
-      {%- include list.html title="Code Languages" items=site.data.skills.code_languages -%}
-    {%- endif -%}
-
-    {%- if site.data.skills.frameworks.size > 0 -%}
-      {%- include list.html title="Frameworks and Runtime Environments" items=site.data.skills.frameworks -%}
-    {%- endif -%}
-
-    {%- if site.data.skills.software.size > 0 -%}
-      {%- include list.html title="Software" items=site.data.skills.software -%}
-    {%- endif -%}
-
-    {%- if site.data.skills.supplemental.size > 0 -%}
-      {%- include list.html title="Supplemental" items=site.data.skills.supplemental -%}
-    {%- endif -%}
+    {% for set in site.data.skills %}
+      {% assign title = set[0] %}
+      {% assign items = set[1] %}
+      {% include list.html title=title items=items %}
+    {% endfor %}
 
   </section>
   {%- endif -%}
