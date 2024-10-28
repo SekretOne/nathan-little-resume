@@ -1,28 +1,80 @@
 
 
-code_languages:
-  - name: java
+Programming Languages:
+  - name: Java
     icon: assets/icons/java-14.svg
-  - name: javascript
+  - name: Javascript / Typescript
     icon: assets/icons/javascript-1.svg
-  - name: OPA
-    icon: assets/icons/openpolicyagent_icon_132125.svg
-  - name: python
+  - name: Python
     icon: assets/icons/python-5.svg
-  - name: ruby
+  - name: Ruby
     icon: assets/icons/ruby.svg
-  - name: bash / shell
+  - name: Shell
     icon: assets/icons/bash-shell-icon.svg
-  - name: groovy
+  - name: Groovy
     icon: assets/icons/groovy.png
-  - name: SQL
-    icon: assets/icons/sql.svg
   - name: PowerShell
     icon: assets/icons/powershell.svg
   - name: GoLang
     icon: assets/icons/golang.svg
 
-frameworks:
+Deployment:
+  - name: Jenkins
+    for: pipeline
+    icon: assets/icons/jenkins-1.svg
+  - name: git
+    for: version control
+    icon: assets/icons/git-icon.svg
+  - name: GitHub
+    for: productivity
+    icon: assets/icons/github-icon-1.svg
+  - name: Amazon Web Services
+    for: cloud
+    icon: assets/icons/aws-2.svg
+  - name: docker
+    for: container
+    icon: assets/icons/docker.svg
+  - name: kubernetes
+    for: container
+    icon: assets/icons/kubernetes.svg
+  - name: Helm
+  - name: ArgoCD
+  - name: terraform
+
+Data:
+  - name: SQL
+    icon: assets/icons/sql.svg
+  - name: postGreSQL
+    for: database
+    icon: assets/icons/postgresql.svg
+  - name: Apache Avro
+    icon: assets/icons/avro.svg
+  - name: Kafka
+    for: messages
+    icon: assets/icons/kafka.svg
+  - name: Mongo
+    for: database
+    icon: assets/icons/mongodb-icon-1.svg
+  - name: DynamoDB
+    for: database
+    icon: assets/icons/aws-dynamodb.svg
+
+Quality:
+  - name: cucumber
+    for:
+      - java
+      - javascript
+      - golang
+    icon: assets/icons/cucumber.svg
+  - name: SonarQube
+  - name: Linters
+
+Security:
+  - name: OPA
+    icon: assets/icons/openpolicyagent_icon_132125.svg
+  - name: Hashicorp Vaults
+
+Frameworks:
   - name: Node.js
     for: javascript
     icon: assets/icons/nodejs-icon.svg
@@ -41,58 +93,12 @@ frameworks:
   - name: Jest
     for: javascript
     icon: assets/icons/jest-0.svg
-  - name: cucumber
-    for:
-      - java
-      - javascript
-    icon: assets/icons/cucumber.svg
+
   - name: jekyll
     for: javascript
     icon: assets/icons/jekyll.svg
 
-software:
-  - name: Google Suite
-    for: productivity
-    icon: assets/icons/google-icon.svg
-  - name: Jira
-    for: productivity
-    icon: assets/icons/jira-1.svg
-  - name: git
-    for: version control
-    icon: assets/icons/git-icon.svg
-  - name: GitHub
-    for: productivity
-    icon: assets/icons/github-icon-1.svg
-  - name: Jenkins
-    for: pipeline
-    icon: assets/icons/jenkins-1.svg
-  - name: Amazon Web Services
-    for: cloud
-    icon: assets/icons/aws-2.svg
-  - name: Corel Suite
-    for: design
-    icon: assets/icons/corel-painter_icon.ico
-  - name: postGreSQL
-    for: database
-    icon: assets/icons/postgresql.svg
-  - name: Mongo
-    for: database
-    icon: assets/icons/mongodb-icon-1.svg
-  - name: DynamoDB
-    for: database
-    icon: assets/icons/aws-dynamodb.svg
-  - name: docker
-    for: container
-    icon: assets/icons/docker.svg
-  - name: kubernetes
-    for: container
-    icon: assets/icons/kubernetes.svg
-  - name: Kafka
-    for: messages
-    icon: assets/icons/kafka.svg
-  - name: Slack
-    for: productivity
-    icon: assets/icons/slack-1.svg
+Observability:
   - name: Grafana
     for: monitoring
     icon: assets/icons/grafana.svg
@@ -105,13 +111,26 @@ software:
   - name: ELK
     for: monitoring
     icon: assets/icons/elastic-stack.svg
+
+Productivity:
+  - name: Google Suite
+    for: productivity
+    icon: assets/icons/google-icon.svg
+  - name: Jira
+    for: productivity
+    icon: assets/icons/jira-1.svg
+  - name: Corel Suite
+    for: design
+    icon: assets/icons/corel-painter_icon.ico
+  - name: Slack
+    for: productivity
+    icon: assets/icons/slack-1.svg
+
   - name: Microsoft Office
     for: productivity
     icon: assets/icons/office-1.svg
-  - name: Apache Avro
-    icon: assets/icons/avro.svg
 
-supplemental:
+Supplemental:
   - name: Open Source Software Licenses
   - name: Change Control
   - name: Configuration Management
