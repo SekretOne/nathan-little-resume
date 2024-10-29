@@ -93,7 +93,6 @@ Frameworks:
   - name: Jest
     for: javascript
     icon: assets/icons/jest-0.svg
-
   - name: jekyll
     for: javascript
     icon: assets/icons/jekyll.svg
@@ -111,28 +110,20 @@ Observability:
   - name: ELK
     for: monitoring
     icon: assets/icons/elastic-stack.svg
+  - name: NewRelic
 
 Productivity:
   - name: Google Suite
-    for: productivity
     icon: assets/icons/google-icon.svg
   - name: Jira
-    for: productivity
     icon: assets/icons/jira-1.svg
+  - name: Slack
+    icon: assets/icons/slack-1.svg
+
+Design:
   - name: Corel Suite
     for: design
     icon: assets/icons/corel-painter_icon.ico
-  - name: Slack
-    for: productivity
-    icon: assets/icons/slack-1.svg
-
   - name: Microsoft Office
     for: productivity
     icon: assets/icons/office-1.svg
-
-Supplemental:
-  - name: Open Source Software Licenses
-  - name: Change Control
-  - name: Configuration Management
-  - name: Automated Testing
-  - name: RESTful Web Services

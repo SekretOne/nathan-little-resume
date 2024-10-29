@@ -8,3 +8,7 @@
 ```bash
 bundle exec jekyll serve
 ```
+
+# Visit
+
+https://github.com/SekretOne/nathan-little-resume
