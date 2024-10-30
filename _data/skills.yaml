@@ -73,6 +73,7 @@ Security:
   - name: OPA
     icon: assets/icons/openpolicyagent_icon_132125.svg
   - name: Hashicorp Vaults
+    icon: assets/icons/vault-svgrepo-com.svg
 
 Frameworks:
   - name: Node.js
