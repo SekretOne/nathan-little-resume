@@ -1,5 +1,4 @@
-With over a decade of programming experience, my skills range both broad and deep. From architecture, data modeling, API contracts,
-pipelines, bare-bones backends to flashy UIs, nothing is too grand to be above, or too basic to be beneath me.
-
-Ultimately, we're trying to make something happen- to solve some problem or make lives easier. I delight in the puzzle, 
-and teaches others is just another kind of puzzle.
+I am a programming *master of many* with a decade of experience in software development. From architecture to testing,
+pipelines to policy, bare-bone backends to flashy UIs: nothing is too big to beyond me, or too basic to beneath.
+Ultimately, I solve problems. Thus, I pride myself on acquiring any skill that helps with that. My philosophy centers on
+observability, honesty, and efficiency.
