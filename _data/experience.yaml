@@ -4,9 +4,9 @@
   company: Capital One
   location: Richmond, Virginia
   description: |-
-    Focus on introducing Service Reliability Engineering practices into Capital One.
-
-    ### Responsibilities
+    Team goal of introducing Service Reliability Engineering practices into Capital One. Role focused educating teams and building observability tooling.
+    
+    #### Responsibilities
 
     * educating junior and senior staff on compliance, testing, and workflow
     * architecture, graphic design, and branding of new tools 
@@ -14,10 +14,10 @@
     * integrating with 3rd party applications
     * assessing and documenting risks for cost, cyber-security and open source licensing
     
-    ### Major Projects
+    #### Major Projects
     
     * reverse engineer `Montana`, an in house observability system from an unstable, one-off kubernetes setup to a manageable one using **Enterprise KOps** and **ArgoCD**.
-    * architect `Counslr`, a scaling, serverless system for cataloguing Service Level Objectives (SLOs) with **AWS Lambda and DynamoDB,** reducing staggering costs to a few dollars a day. Uses **Golang** and **Angular**
+    * architect `Counslr`, a scaling, serverless system for cataloging Service Level Objectives (SLOs) with **AWS Lambda and DynamoDB,** reducing staggering costs to a few dollars a day. Uses **Golang** and **Angular**
 
 - position: Senior Software Engineer
   from: 2018-07-01
@@ -27,7 +27,7 @@
   description: |-
     Developer and support of credit card applications.
     
-    ### Responsibilities
+    #### Responsibilities
 
     * active role with stakeholders and leadership to identify intent
     * managing priority and technical design to balance need, cost, and risk
@@ -35,7 +35,7 @@
     * mentoring and technical teaching
     * 'lead from the front' for discovering problems and implementing solutions, from high level architectural to low level issues
 
-    ### Major Projects
+    #### Major Projects
 
     * cloud Migration of Visa Chargeback applications, java microservices with PostGres and Mongo databases
     * `JIT Chargeback Core`, *Spring Boot* cloud native chargeback orchestrator for in-house case management system
@@ -50,13 +50,13 @@
     Internal consultant to the newly formed TOC. Bridged between engineering and production support with the broad
     purview of **automate, eliminate, and optimize.**
 
-    ### Responsibilities
+    #### Responsibilities
 
     * transforming monitoring tooling from HP suite to new technologies
     * educating production support staff on scripting
     * directly supporting high impact production issues with data analyis and mitigation plans
 
-    ### Major Projects
+    #### Major Projects
 
     * evaluation and replacement of company 'on call' machanism from Mir3 to PagerDuty.
     * built `Bridget`, a serverless python Slack bot for incident management and bridge coordination.
@@ -69,13 +69,13 @@
   description: |-
     Developer position building and supported the CRM software.
 
-    ### Responsibilities
+    #### Responsibilities
 
     * Managing code repository and SOD policies for team
     * production support
     * Support of IVR
 
-    ### Major Projects
+    #### Major Projects
 
     * support and enhancement of `Fenrir`, a webservice supplement to INFOR using Java and Thymeleaf
     * `Customer Service Gateway 3`, java and angular 1.X based customer lookup tool

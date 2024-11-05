@@ -1,5 +1,3 @@
-
-
 Programming Languages:
   - name: Java
     icon: assets/icons/java-14.svg
@@ -76,9 +74,6 @@ Security:
     icon: assets/icons/vault-svgrepo-com.svg
 
 Frameworks:
-  - name: Node.js
-    for: javascript
-    icon: assets/icons/nodejs-icon.svg
   - name: Vue.js
     for: javascript
     icon: assets/icons/vue-js.svg
@@ -91,12 +86,13 @@ Frameworks:
   - name: xState
     icon: assets/icons/xstate.svg
     for: javascript
-  - name: Jest
-    for: javascript
-    icon: assets/icons/jest-0.svg
   - name: jekyll
     for: javascript
     icon: assets/icons/jekyll.svg
+  - name: Angular JS
+  - name: Jest
+    for: javascript
+    icon: assets/icons/jest-0.svg
 
 Observability:
   - name: Grafana

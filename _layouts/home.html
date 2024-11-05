@@ -19,6 +19,26 @@ layout: default
 
   {% include markdown.html path="md/intro.md" %}
 
+  {%- if site.data.education.size > 0 -%}
+  <section class="resume-section">
+    <header class="resume-header">
+      <h2>Education and Certifications</h2>
+    </header>
+
+    {%- for degree in site.data.education -%}
+    <div>
+      <h3>{{ degree.name }}</h3>
+      <div class="experience-detail-container">
+        <div class="experience-detail-space">
+          <div>{{degree.location}}</div>
+        </div>
+        <span class="experience-detail-time">{{degree.from}} - {{degree.to}}</span>
+      </div>
+    </div>
+    {%- endfor -%}
+  </section>
+  {%- endif -%}
+
   {%- if site.data.experience.size > 0 -%}
   <section class="resume-section">
     <header class="resume-header">
@@ -42,27 +62,6 @@ layout: default
       {% include list.html title=title items=items %}
     {% endfor %}
 
-  </section>
-  {%- endif -%}
-
-
-  {%- if site.data.education.size > 0 -%}
-  <section class="resume-section">
-    <header class="resume-header">
-      <h2>Education and Certifications</h2>
-    </header>
-
-    {%- for degree in site.data.education -%}
-    <div>
-      <h2>{{ degree.name }}</h2>
-      <div class="experience-detail-container">
-        <div class="experience-detail-space">
-          <div>{{degree.location}}</div>
-        </div>
-        <span class="experience-detail-time">{{degree.from}} - {{degree.to}}</span>
-      </div>
-    </div>
-    {%- endfor -%}
   </section>
   {%- endif -%}
 
