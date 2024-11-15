@@ -18,54 +18,69 @@ Programming Languages:
 
 Deployment:
   - name: Jenkins
-    for: pipeline
     icon: assets/icons/jenkins-1.svg
-  - name: git
-    for: version control
+  - name: Git
     icon: assets/icons/git-icon.svg
   - name: GitHub
-    for: productivity
     icon: assets/icons/github-icon-1.svg
   - name: Amazon Web Services
-    for: cloud
     icon: assets/icons/aws-2.svg
-  - name: docker
-    for: container
+  - name: Docker
     icon: assets/icons/docker.svg
-  - name: kubernetes
-    for: container
+  - name: Kubernetes
     icon: assets/icons/kubernetes.svg
   - name: Helm
+    icon: assets/icons/helm-svgrepo-com.svg
   - name: ArgoCD
+    icon: assets/icons/argocd.png
   - name: terraform
+    icon: assets/icons/terraform-icon-svgrepo-com.svg
 
 Data:
   - name: SQL
     icon: assets/icons/sql.svg
   - name: postGreSQL
-    for: database
     icon: assets/icons/postgresql.svg
   - name: Apache Avro
     icon: assets/icons/avro.svg
   - name: Kafka
-    for: messages
     icon: assets/icons/kafka.svg
   - name: Mongo
-    for: database
     icon: assets/icons/mongodb-icon-1.svg
   - name: DynamoDB
-    for: database
     icon: assets/icons/aws-dynamodb.svg
+
+Notable Frameworks:
+  - name: Vue.js
+    icon: assets/icons/vue-js.svg
+  - name: Spring-Boot
+    icon: assets/icons/spring-3.svg
+  - name: hibernate
+    icon: assets/icons/hibernate.svg
+  - name: xState
+    icon: assets/icons/xstate.svg
+  - name: jekyll
+    icon: assets/icons/jekyll.svg
+  - name: Angular JS
+    icon: assets/icons/angular-icon.svg
+
+Observability:
+  - name: Grafana
+    icon: assets/icons/grafana.svg
+  - name: PagerDuty
+    icon: assets/icons/pagerduty_logo_icon.svg
+  - name: Zabbix
+    icon: assets/icons/zabbix-icon.svg
+  - name: ELK
+    icon: assets/icons/elastic-stack.svg
+  - name: NewRelic
+    icon: assets/icons/new-relic-3.svg
 
 Quality:
   - name: cucumber
-    for:
-      - java
-      - javascript
-      - golang
     icon: assets/icons/cucumber.svg
   - name: SonarQube
-  - name: Linters
+    icon: assets/icons/angular-icon.svg
 
 Security:
   - name: OPA
@@ -73,54 +88,13 @@ Security:
   - name: Hashicorp Vaults
     icon: assets/icons/vault-svgrepo-com.svg
 
-Frameworks:
-  - name: Vue.js
-    for: javascript
-    icon: assets/icons/vue-js.svg
-  - name: Spring-Boot
-    for: java
-    icon: assets/icons/spring-3.svg
-  - name: hibernate
-    for: java
-    icon: assets/icons/hibernate.svg
-  - name: xState
-    icon: assets/icons/xstate.svg
-    for: javascript
-  - name: jekyll
-    for: javascript
-    icon: assets/icons/jekyll.svg
-  - name: Angular JS
-  - name: Jest
-    for: javascript
-    icon: assets/icons/jest-0.svg
-
-Observability:
-  - name: Grafana
-    for: monitoring
-    icon: assets/icons/grafana.svg
-  - name: PagerDuty
-    for: monitoring
-    icon: assets/icons/pagerduty_logo_icon.svg
-  - name: Zabbix
-    for: monitoring
-    icon: assets/icons/zabbix-icon.svg
-  - name: ELK
-    for: monitoring
-    icon: assets/icons/elastic-stack.svg
-  - name: NewRelic
 
 Productivity:
-  - name: Google Suite
+  - name: When to just use a spreadsheet
     icon: assets/icons/google-icon.svg
+  - name: When not to use spreadsheets
+    icon: assets/icons/No_sign.svg
   - name: Jira
     icon: assets/icons/jira-1.svg
   - name: Slack
     icon: assets/icons/slack-1.svg
-
-Design:
-  - name: Corel Suite
-    for: design
-    icon: assets/icons/corel-painter_icon.ico
-  - name: Microsoft Office
-    for: productivity
-    icon: assets/icons/office-1.svg
