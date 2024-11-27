@@ -26,13 +26,13 @@ layout: default
     </header>
 
     {%- for degree in site.data.education -%}
-    <div>
+    <div class="experience-container">
       <h3>{{ degree.name }}</h3>
-      <div class="experience-detail-container">
-        <div class="experience-detail-space">
-          <div>{{degree.location}}</div>
+      <div class="experience-content">
+        <div class="experience-meta">
+          <span class="experience-detail-space">{{degree.location}}</span>
+          <span class="experience-detail-time">{{degree.from}} - {{degree.to}}</span>
         </div>
-        <span class="experience-detail-time">{{degree.from}} - {{degree.to}}</span>
       </div>
     </div>
     {%- endfor -%}

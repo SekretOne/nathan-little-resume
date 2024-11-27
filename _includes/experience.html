@@ -1,13 +1,13 @@
-<div class='lil-experience'>
+<div class='experience-container'>
     <h3>{{ exp.position }}</h3>
-    <div class="experience-detail-container">
-        <div class="experience-detail-space">
+    <div class="experience-content">
+        <div class="experience-meta">
             <div>{{exp.company}}</div>
             <div>{{exp.location}}</div>
         </div>
         <span class="experience-detail-time">{{exp.from | date: '%B, %Y'}} - {{exp.to | date: '%B, %Y'}}</span>
+        <p>
+            {{ exp.description | markdownify }}
+        </p>
     </div>
-    <p>
-        {{ exp.description | markdownify }}
-    </p>
 </div>
