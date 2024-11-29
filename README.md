@@ -11,4 +11,4 @@ bundle exec jekyll serve
 
 # Visit
 
-https://github.com/SekretOne/nathan-little-resume
+https://sekretone.github.io/nathan-little-resume/
