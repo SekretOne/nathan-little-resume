@@ -4,20 +4,21 @@
   company: Capital One
   location: Richmond, Virginia
   description: |-
-    Team goal of introducing Service Reliability Engineering practices into Capital One. Role focused educating teams and building observability tooling.
+    Lead engineer of a dev team tasked with creating a platform for enabling and advocating site-reliability practices. Major projects were decommissioning the old, costly systems and designing a new one from the ground up.
     
-    #### Responsibilities
-
-    * educating junior and senior staff on compliance, testing, and workflow
-    * architecture, graphic design, and branding of new tools 
-    * investigating new technologies and enterprise options
-    * integrating with 3rd party applications
-    * assessing and documenting risks for cost, cyber-security and open source licensing
+    ### Responsibilities
     
-    #### Major Projects
+    - architect a cloud native, serverless, scaling platform to capture SLI/SLO data across the company (AWS Lambda, Golang, S3, Angular JS for UI)
+    - sunsetting previous platform (dockerized microservices on kubernetes)
+    - educating junior and senior staff on compliance, testing, and workflow
+    - graphic design, and branding of new tools
+    - investigating new technologies and enterprise options
+    - integrating with APIs and streams
+    - design and implement active-active endlessly scaling databases via Dynamodb. (hierarchical and time series)
+    - assessing and documenting risks for cost, cyber-security and open source licensing
+    - build and maintain pipelines and workflows to produce an always up system capable of multiple of releases a day.
+        
     
-    * reverse engineer `Montana`, an in house observability system from an unstable, one-off kubernetes setup to a manageable one using **Enterprise KOps** and **ArgoCD**.
-    * architect `Counslr`, a scaling, serverless system for cataloging Service Level Objectives (SLOs) with **AWS Lambda and DynamoDB,** reducing staggering costs to a few dollars a day. Uses **Golang** and **Angular**
 
 - position: Senior Software Engineer
   from: 2018-07-01
@@ -47,19 +48,18 @@
   company: Capital One
   location: Richmond, Virginia
   description: |-
-    Internal consultant to the newly formed TOC. Bridged between engineering and production support with the broad
-    purview of **automate, eliminate, and optimize.**
-
-    #### Responsibilities
-
-    * transforming monitoring tooling from HP suite to new technologies
-    * educating production support staff on scripting
-    * directly supporting high impact production issues with data analyis and mitigation plans
-
-    #### Major Projects
-
-    * evaluation and replacement of company 'on call' machanism from Mir3 to PagerDuty.
+    Internal consultant to the newly formed TOC. Bridged between engineering and production support with the broad purview of "automate, eliminate, and optimize."
+  
+    ### Major Projects
+    
+    * migrate company 'on call' system from Mir3 to PagerDuty.
     * built `Bridget`, a serverless python Slack bot for incident management and bridge coordination.
+    
+    ### Responsibilities
+    
+    * upgrade monitoring from HP suite to new, supported solutions
+    * educating production support staff on scripting, automation techniques
+    * directly supporting high impact production issues with data analysis and mitigation plans
 
 - position: Shared Applications Developer
   from: 2015-09-01
