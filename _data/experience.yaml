@@ -1,24 +1,29 @@
+- position: Lead Engineer of Azure Operations
+  from: 2022-04-07
+  to: present
+  company: Genworth Financial
+  location: Richmond, Virginia
+  description: |-
+    Focus on Azure and AWS mechanisms for operational support and governance. While Azure is in the title, the role is multicloud.
+    
+    ### Major projects
+    - Break Glass procedures and automated auditing for account recovery
+    - Create Enterprise monitoring and logging standards using cloud native, Spunk, and Grafana.
+    - Infrastructure as code solutions Kubernetes and Helm.
+
 - position: Lead Software Engineer, SRE
   from: 2022-05-01
   to: 2024-08-10
   company: Capital One
   location: Richmond, Virginia
   description: |-
-    Lead engineer of a dev team tasked with creating a platform for enabling and advocating site-reliability practices. Major projects were decommissioning the old, costly systems and designing a new one from the ground up.
+    Led a team of engineers in building an SRE Platform for Capital One internal decisioning, usable across tech and board membership.
     
-    ### Responsibilities
+    ### Major projects
     
-    - architect a cloud native, serverless, scaling platform to capture SLI/SLO data across the company (AWS Lambda, Golang, S3, Angular JS for UI)
-    - sunsetting previous platform (dockerized microservices on kubernetes)
-    - educating junior and senior staff on compliance, testing, and workflow
-    - graphic design, and branding of new tools
-    - investigating new technologies and enterprise options
-    - integrating with APIs and streams
-    - design and implement active-active endlessly scaling databases via Dynamodb. (hierarchical and time series)
-    - assessing and documenting risks for cost, cyber-security and open source licensing
-    - build and maintain pipelines and workflows to produce an always up system capable of multiple of releases a day.
-        
-    
+    - Architect a cloud native **SRE platform** (AWS) to record and process uptime metrics for the entire company. System included a UI in **AngularJS**, backend using lambda and goLang, and data solution with **DynamoDB.** Solution was automatically scaling, with 100% uptime.
+    - Create a pipeline and workflow that enabled multiple daily deployments with automatic rollback.
+    - Reverse engineer and replace the previous failed attempt, an overengineered microservice setup on **kubernetes** with **Istio Service mesh**.
 
 - position: Senior Software Engineer
   from: 2018-07-01
@@ -49,7 +54,7 @@
   location: Richmond, Virginia
   description: |-
     Internal consultant to the newly formed TOC. Bridged between engineering and production support with the broad purview of "automate, eliminate, and optimize."
-  
+    
     ### Major Projects
     
     * migrate company 'on call' system from Mir3 to PagerDuty.

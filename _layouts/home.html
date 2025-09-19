@@ -19,19 +19,19 @@ layout: default
 
   {% include markdown.html path="md/intro.md" %}
 
-  {%- if site.data.education.size > 0 -%}
+  {%- if site.data.certs.size > 0 -%}
   <section class="resume-section">
     <header class="resume-header">
-      <h2>Education and Certifications</h2>
+      <h2>Certifications</h2>
     </header>
 
-    {%- for degree in site.data.education -%}
+    {%- for cert in site.data.certs -%}
     <div class="experience-container">
-      <h3>{{ degree.name }}</h3>
+      <h3>{{ cert.name }}</h3>
       <div class="experience-content">
         <div class="experience-meta">
-          <span class="experience-detail-space">{{degree.location}}</span>
-          <span class="experience-detail-time">{{degree.from}} - {{degree.to}}</span>
+          <span class="experience-detail-space">{{cert.location}}</span>
+          <span class="experience-detail-time">{{cert.from}} - {{cert.to}}</span>
         </div>
       </div>
     </div>
@@ -62,6 +62,26 @@ layout: default
       {% include list.html title=title items=items %}
     {% endfor %}
 
+  </section>
+  {%- endif -%}
+
+  {%- if site.data.education.size > 0 -%}
+  <section class="resume-section">
+    <header class="resume-header">
+      <h2>Education</h2>
+    </header>
+
+    {%- for degree in site.data.education -%}
+    <div class="experience-container">
+      <h3>{{ degree.name }}</h3>
+      <div class="experience-content">
+        <div class="experience-meta">
+          <span class="experience-detail-space">{{degree.location}}</span>
+          <span class="experience-detail-time">{{degree.from}} - {{degree.to}}</span>
+        </div>
+      </div>
+    </div>
+    {%- endfor -%}
   </section>
   {%- endif -%}
 
